@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="pro-common" />
+        <module name="pro-admin" />
+        <module name="pro-app" />
+        <module name="pro-service" />
+        <module name="pro-dao" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="pro-admin" target="1.8" />
+      <module name="pro-app" target="1.8" />
+      <module name="pro-common" target="1.8" />
+      <module name="pro-dao" target="1.8" />
+      <module name="pro-parent" target="1.8" />
+      <module name="pro-service" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="pro-admin" options="-parameters" />
+      <module name="pro-app" options="-parameters" />
+      <module name="pro-common" options="-parameters" />
+      <module name="pro-dao" options="-parameters" />
+      <module name="pro-service" options="-parameters" />
+    </option>
+  </component>
+</project>
