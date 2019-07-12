@@ -63,9 +63,9 @@ public class GenerateCode {
         // 自定义 mapper 父类
         // strategy.setSuperMapperClass("com.baomidou.demo.TestMapper");
         // 自定义 service 父类
-        strategy.setSuperServiceClass("BaseService");
+        //strategy.setSuperServiceClass("BaseService");
         // 自定义 service 实现类父类
-        strategy.setSuperServiceImplClass("AbstractBaseService");
+        //strategy.setSuperServiceImplClass("AbstractBaseService");
         // 自定义 controller 父类
         // strategy.setSuperControllerClass("com.baomidou.demo.TestController");
         // 【实体】是否生成字段常量（默认 false）
@@ -78,7 +78,7 @@ public class GenerateCode {
 
         // 包配置
         PackageConfig pc = new PackageConfig();
-        pc.setParent("com.jone.pro.yj");
+        pc.setParent("com.jone.pro.");
         pc.setEntity("entity");
         pc.setXml("mapper");
         pc.setService("service");

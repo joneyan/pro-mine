@@ -17,5 +17,5 @@ public interface GarbageService{
 
     void save(Garbage garbage);
 
-    void getAll();
+    List<Garbage> getAll();
 }

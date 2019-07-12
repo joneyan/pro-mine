@@ -9,6 +9,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
 
 /**
  * <p>
@@ -18,7 +21,7 @@ import org.springframework.stereotype.Controller;
  * @author yanjing
  * @since 2019-07-11
  */
-@Controller
+@RestController
 @RequestMapping("/garbage")
 public class GarbageController {
 
@@ -26,13 +29,14 @@ public class GarbageController {
     private GarbageService garbageService;
 
     @PostMapping("/save")
-    public void save(@RequestBody Garbage garbage){
+    public Boolean save(@RequestBody Garbage garbage){
         garbageService.save(garbage);
+        return Boolean.TRUE;
     }
 
     @PostMapping("/get")
-    public void save(){
-        garbageService.getAll();
+    public List<Garbage> save(){
+       return garbageService.getAll();
     }
 }
 

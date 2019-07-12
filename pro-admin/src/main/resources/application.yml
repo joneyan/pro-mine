@@ -4,7 +4,7 @@ server:
 #elasticsearch
 spring:
   datasource:
-    url:jdbc: mysql://111.231.59.47:3306/garbage
+    url: jdbc:mysql://111.231.59.47:3306/garbage?characterEncoding=utf8
     username: root
     password: 12345600
     driver-class-name: com.mysql.jdbc.Driver
@@ -79,3 +79,4 @@ mybatis-plus:
     cache-enabled: false
     #配置JdbcTypeForNull, oracle数据库必须配置
     jdbc-type-for-null: 'null'
+debug: true

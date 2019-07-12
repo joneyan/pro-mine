@@ -34,8 +34,8 @@ public class GarbageServiceImpl implements GarbageService {
     }
 
     @Override
-    public void getAll() {
+    public List<Garbage>  getAll() {
         List<Garbage> garbage = garbageMapper.selectAll();
-        System.out.println(garbage);
+        return garbage;
     }
 }
