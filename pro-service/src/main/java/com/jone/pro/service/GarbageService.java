@@ -1,6 +1,7 @@
 package com.jone.pro.service;
 
 import com.jone.pro.entity.Garbage;
+import com.jone.pro.vo.GarbageSearchVO;
 
 import java.util.List;
 
@@ -18,4 +19,6 @@ public interface GarbageService{
     void save(Garbage garbage);
 
     List<Garbage> getAll();
+
+    List<GarbageSearchVO> searchGarbage(Garbage garbage);
 }

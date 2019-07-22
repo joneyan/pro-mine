@@ -1,8 +1,14 @@
 package com.jone.pro.admin.controller.garbage;
 
 
+import com.jone.pro.admin.controller.garbage.request.SearchGarbageRequest;
+import com.jone.pro.admin.controller.garbage.response.SearchGarbageResponse;
+import com.jone.pro.common.annotation.ParamsValidate;
+import com.jone.pro.common.base.ProResponse;
 import com.jone.pro.entity.Garbage;
 import com.jone.pro.service.GarbageService;
+import com.jone.pro.vo.GarbageSearchVO;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -37,6 +43,18 @@ public class GarbageController {
     @PostMapping("/get")
     public List<Garbage> save(){
        return garbageService.getAll();
+    }
+
+    @PostMapping("/search")
+    @ParamsValidate
+    public ProResponse<SearchGarbageResponse> search(@RequestBody SearchGarbageRequest searchGarbageRequest){
+        Garbage garbage = new Garbage();
+        garbage.setGarbageName(searchGarbageRequest.getKeyWord());
+        if (StringUtils.isNotEmpty(searchGarbageRequest.getTypeId())){
+            garbage.setTypeId(Long.parseLong(searchGarbageRequest.getTypeId()));
+        }
+        List<GarbageSearchVO> garbageSearchVOS = garbageService.searchGarbage(garbage);
+        return new ProResponse(new SearchGarbageResponse(garbageSearchVOS));
     }
 }
 

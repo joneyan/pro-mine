@@ -30,4 +30,23 @@
         select * from garbage
     </select>
 
+    <select id="selectListByParams" resultMap="BaseResultMap" parameterType="java.util.Map">
+        select
+        *
+        from garbage
+        <where>
+            <if test="keyWord != null and keyWord!= ''">
+                AND garbage_name like CONCAT_WS('','%',#{keyWord},'%')
+            </if>
+
+            <if test="typeId != null and typeId!= ''">
+                AND type_id = #{typeId}
+            </if>
+            and deleted =0
+        </where>
+        <if test="typeId != null and typeId!= ''">
+            limit 88
+        </if>
+    </select>
+
 </mapper>

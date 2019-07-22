@@ -1,6 +1,9 @@
 
 server:
-  port: 8081
+  port: 8088
+  ssl:
+    key-store: joneyancode.cn.pfx
+    key-store-password: 69ca648jin52yx
 #elasticsearch
 spring:
   datasource:
@@ -79,4 +82,3 @@ mybatis-plus:
     cache-enabled: false
     #配置JdbcTypeForNull, oracle数据库必须配置
     jdbc-type-for-null: 'null'
-debug: true

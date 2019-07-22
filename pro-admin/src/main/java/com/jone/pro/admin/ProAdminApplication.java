@@ -1,6 +1,7 @@
 package com.jone.pro.admin;
 
 import com.jone.pro.admin.rocketmq.Foo;
+import org.apache.catalina.connector.Connector;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;

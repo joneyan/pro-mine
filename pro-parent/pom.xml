@@ -286,94 +286,16 @@
         </dependency>
 
         <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-support</artifactId>
+            <version>2.3</version>
+        </dependency>
+
+        <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
         </dependency>
     </dependencies>
-
-    <build>
-        <!--<plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-
-            <plugin>
-                <groupId>com.baomidou</groupId>
-                <artifactId>mybatisplus-maven-plugin</artifactId>
-                <version>1.0</version>
-                <configuration>
-                    &lt;!&ndash; 输出目录(默认java.io.tmpdir) &ndash;&gt;
-                    <outputDir>cache</outputDir>
-                    &lt;!&ndash; 是否覆盖同名文件(默认false) &ndash;&gt;
-                    <fileOverride>true</fileOverride>
-                    &lt;!&ndash; mapper.mapper 中添加二级缓存配置(默认true) &ndash;&gt;
-                    <enableCache>true</enableCache>
-                    &lt;!&ndash; 开发者名称 &ndash;&gt;
-                    <author>xiaochong</author>
-                    &lt;!&ndash; 是否开启 ActiveRecord 模式(默认true) &ndash;&gt;
-                    <activeRecord>false</activeRecord>
-                    &lt;!&ndash; 数据源配置，( **必配** ) &ndash;&gt;
-                    <dataSource>
-                        <driverName>com.mysql.jdbc.Driver</driverName>
-                        <url>mysql://111.231.59.47:3306/garbage</url>
-                        <username>root</username>
-                        <password>12345600></password>
-                    </dataSource>
-                    <strategy>
-                        &lt;!&ndash; 字段生成策略，四种类型，从名称就能看出来含义：
-                            nochange(默认),
-                            underline_to_camel,(下划线转驼峰)
-                            remove_prefix,(去除第一个下划线的前部分，后面保持不变)
-                            remove_prefix_and_camel(去除第一个下划线的前部分，后面转驼峰) &ndash;&gt;
-                        <naming>underline_to_camel</naming>
-                        &lt;!&ndash; 表前缀 &ndash;&gt;
-                        <tablePrefix></tablePrefix>
-                        &lt;!&ndash;Entity中的ID生成策略（默认 id_worker,uuid）&ndash;&gt;
-                        <idGenType>uuid</idGenType>
-                        &lt;!&ndash;自定义超类&ndash;&gt;
-                        &lt;!&ndash;<superServiceClass>com.baomidou.base.BaseService</superServiceClass>&ndash;&gt;
-                        &lt;!&ndash; 要包含的表 与exclude 二选一配置&ndash;&gt;
-                        <include>
-                            <property>user_member_info</property>
-                            <property>user_member_buy_history</property>
-                        </include>
-                        &lt;!&ndash; 要排除的表 &ndash;&gt;
-                        &lt;!&ndash;<exclude>&ndash;&gt;
-                        &lt;!&ndash;<property>schema_version</property>&ndash;&gt;
-                        &lt;!&ndash;</exclude>&ndash;&gt;
-                    </strategy>
-                    <packageInfo>
-                        &lt;!&ndash; 父级包名称，如果不写，下面的service等就需要写全包名(默认com.baomidou) &ndash;&gt;
-                        <parent>com.jone.pro</parent>
-                        &lt;!&ndash;service包名(默认service)&ndash;&gt;
-                        <service>service</service>
-                        &lt;!&ndash;serviceImpl包名(默认service.impl)&ndash;&gt;
-                        <serviceImpl>service.impl</serviceImpl>
-                        &lt;!&ndash;entity包名(默认entity)&ndash;&gt;
-                        <entity>entity</entity>
-                        &lt;!&ndash;mapper包名(默认mapper)&ndash;&gt;
-                        <mapper>mapper</mapper>
-                        &lt;!&ndash;xml包名(默认mapper.mapper)&ndash;&gt;
-                        <xml>mapper.xml</xml>
-
-                    </packageInfo>
-                    <template>
-                        &lt;!&ndash; 定义controller模板的路径 &ndash;&gt;
-                        &lt;!&ndash;<controller>/template/controller1.java.vm</controller>&ndash;&gt;
-                    </template>
-                </configuration>
-                <dependencies>
-                    <dependency>
-                        <groupId>mysql</groupId>
-                        <artifactId>mysql-connector-java</artifactId>
-                        <version>${mysql.version}</version>
-                    </dependency>
-                </dependencies>
-
-            </plugin>
-        </plugins>-->
-    </build>
 
     <repositories>
         <repository>

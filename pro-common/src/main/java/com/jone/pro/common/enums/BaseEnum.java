@@ -5,5 +5,5 @@ package com.jone.pro.common.enums;
  * @Date: 2019/4/9 下午2:33
  * @Description:
  */
-public enum BaseEnum {
+public interface BaseEnum {
 }

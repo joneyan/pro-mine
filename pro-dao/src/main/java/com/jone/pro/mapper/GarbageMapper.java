@@ -7,6 +7,7 @@ import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * <p>
@@ -21,4 +22,6 @@ public interface GarbageMapper extends BaseMapper<Garbage> {
     void batchInsert(@Param("garbageList") List<Garbage> garbageList);
 
     List<Garbage> selectAll();
+
+    List<Garbage> selectListByParams(Map<String, Object> params);
 }
