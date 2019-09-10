@@ -1,7 +1,14 @@
 server:
   port: 8082
+
 #elasticsearch
 spring:
+  datasource:
+    url: jdbc:mysql://111.231.59.47:3306/garbage?characterEncoding=utf8
+    username: root
+    password: 12345600
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
   data:
     elasticsearch:
       cluster-name: elasticsearch

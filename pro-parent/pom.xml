@@ -71,6 +71,10 @@
         <mybatisplus.version>3.1.0</mybatisplus.version>
         <mybatis-ehcache-version>1.1.0</mybatis-ehcache-version>
         <druid.version>1.1.10</druid.version>
+
+        <!--sofa链路跟踪-->
+        <sofa.tracer.version>3.0.5</sofa.tracer.version>
+        <sea.sofa.version>1.0.0-SNAPSHOT</sea.sofa.version>
     </properties>
 
     <dependencies>
@@ -295,6 +299,51 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
         </dependency>
+
+
+        <!--sofa链路跟踪-->
+        <dependency>
+            <groupId>com.alipay.sofa</groupId>
+            <artifactId>sofa-tracer-springmvc-plugin</artifactId>
+            <version>${sofa.tracer.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alipay.sofa</groupId>
+            <artifactId>sofa-tracer-httpclient-plugin</artifactId>
+            <version>${sofa.tracer.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alipay.sofa</groupId>
+            <artifactId>sofa-tracer-dubbo-plugin</artifactId>
+            <version>${sofa.tracer.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alipay.sofa</groupId>
+            <artifactId>sofa-tracer-datasource-plugin</artifactId>
+            <version>${sofa.tracer.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alipay.sofa</groupId>
+            <artifactId>sofa-tracer-zipkin-plugin</artifactId>
+            <version>${sofa.tracer.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.spy.sea</groupId>
+            <artifactId>sofa-tracer-datasource</artifactId>
+            <version>${sea.sofa.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.spy.sea</groupId>
+            <artifactId>sofa-tracer-simple-plugin</artifactId>
+            <version>${sea.sofa.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.spy.sea</groupId>
+            <artifactId>sofa-tracer-dubbo-legacy-plugin</artifactId>
+            <version>${sea.sofa.version}</version>
+        </dependency>
+
+        <!--sofa链路跟踪 end-->
     </dependencies>
 
     <repositories>

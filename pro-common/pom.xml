@@ -16,5 +16,18 @@
 
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.aspectj/aspectjrt -->
+
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>4.6.4</version>
+        </dependency>
+
+        <!--微信xml解析-->
+        <dependency>
+            <groupId>com.thoughtworks.xstream</groupId>
+            <artifactId>xstream</artifactId>
+            <version>1.4.3</version>
+        </dependency>
     </dependencies>
 </project>

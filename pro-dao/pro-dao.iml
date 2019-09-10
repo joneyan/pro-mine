@@ -48,9 +48,7 @@
     <orderEntry type="library" name="Maven: org.jboss.logging:jboss-logging:3.3.2.Final" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml:classmate:1.3.4" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-web:5.0.7.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-beans:5.0.7.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-webmvc:5.0.7.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-context:5.0.7.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-expression:5.0.7.RELEASE" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework.boot:spring-boot-starter-test:2.0.3.RELEASE" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework.boot:spring-boot-test:2.0.3.RELEASE" level="project" />
@@ -100,7 +98,6 @@
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.9.6" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.dataformat:jackson-dataformat-cbor:2.9.6" level="project" />
     <orderEntry type="library" name="Maven: com.tdunning:t-digest:3.0" level="project" />
-    <orderEntry type="library" name="Maven: org.hdrhistogram:HdrHistogram:2.1.9" level="project" />
     <orderEntry type="library" name="Maven: org.apache.logging.log4j:log4j-api:2.10.0" level="project" />
     <orderEntry type="library" name="Maven: org.elasticsearch:jna:4.4.0-1" level="project" />
     <orderEntry type="library" name="Maven: org.elasticsearch.client:transport:5.6.10" level="project" />
@@ -183,7 +180,6 @@
     <orderEntry type="library" name="Maven: org.apache.poi:poi:3.9" level="project" />
     <orderEntry type="library" name="Maven: org.apache.poi:poi-ooxml:3.9" level="project" />
     <orderEntry type="library" name="Maven: dom4j:dom4j:1.6.1" level="project" />
-    <orderEntry type="library" name="Maven: xml-apis:xml-apis:1.4.01" level="project" />
     <orderEntry type="library" name="Maven: org.apache.poi:poi-ooxml-schemas:3.9" level="project" />
     <orderEntry type="library" name="Maven: org.apache.xmlbeans:xmlbeans:2.3.0" level="project" />
     <orderEntry type="library" name="Maven: stax:stax-api:1.0.1" level="project" />
@@ -209,5 +205,29 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-jdbc:5.0.7.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: com.baomidou:mybatis-plus-support:2.3" level="project" />
     <orderEntry type="library" name="Maven: junit:junit:4.12" level="project" />
+    <orderEntry type="library" name="Maven: com.alipay.sofa:sofa-tracer-springmvc-plugin:3.0.5" level="project" />
+    <orderEntry type="library" name="Maven: com.alipay.sofa:tracer-core:3.0.5" level="project" />
+    <orderEntry type="library" name="Maven: io.opentracing:opentracing-api:0.22.0" level="project" />
+    <orderEntry type="library" name="Maven: io.opentracing:opentracing-noop:0.22.0" level="project" />
+    <orderEntry type="library" name="Maven: io.opentracing:opentracing-mock:0.22.0" level="project" />
+    <orderEntry type="library" name="Maven: io.opentracing:opentracing-util:0.22.0" level="project" />
+    <orderEntry type="library" name="Maven: com.alipay.sofa:tracer-extensions:3.0.5" level="project" />
+    <orderEntry type="library" name="Maven: com.alipay.sofa:sofa-tracer-httpclient-plugin:3.0.5" level="project" />
+    <orderEntry type="library" name="Maven: com.alipay.sofa:sofa-tracer-dubbo-plugin:3.0.5" level="project" />
+    <orderEntry type="library" name="Maven: com.alipay.sofa:sofa-tracer-datasource-plugin:3.0.5" level="project" />
+    <orderEntry type="library" name="Maven: com.alipay.sofa:sofa-tracer-zipkin-plugin:3.0.5" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-beans:5.0.7.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: io.zipkin.zipkin2:zipkin:2.11.12" level="project" />
+    <orderEntry type="library" name="Maven: io.zipkin.reporter2:zipkin-reporter:2.7.15" level="project" />
+    <orderEntry type="library" name="Maven: io.zipkin.reporter2:zipkin-sender-okhttp3:2.7.15" level="project" />
+    <orderEntry type="library" name="Maven: com.squareup.okhttp3:okhttp:3.12.1" level="project" />
+    <orderEntry type="library" name="Maven: com.squareup.okio:okio:1.15.0" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-context:5.0.7.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: io.micrometer:micrometer-core:1.0.5" level="project" />
+    <orderEntry type="library" name="Maven: org.hdrhistogram:HdrHistogram:2.1.10" level="project" />
+    <orderEntry type="library" name="Maven: org.latencyutils:LatencyUtils:2.0.3" level="project" />
+    <orderEntry type="library" name="Maven: com.github.spy.sea:sofa-tracer-datasource:1.0.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.github.spy.sea:sofa-tracer-simple-plugin:1.0.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.github.spy.sea:sofa-tracer-dubbo-legacy-plugin:1.0.0-SNAPSHOT" level="project" />
   </component>
 </module>
