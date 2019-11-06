@@ -27,7 +27,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-web:2.0.3.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter:2.0.3.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot:2.0.3.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-logging:2.0.3.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: ch.qos.logback:logback-classic:1.2.3" level="project" />
     <orderEntry type="library" name="Maven: ch.qos.logback:logback-core:1.2.3" level="project" />
@@ -227,7 +226,9 @@
     <orderEntry type="library" name="Maven: org.hdrhistogram:HdrHistogram:2.1.10" level="project" />
     <orderEntry type="library" name="Maven: org.latencyutils:LatencyUtils:2.0.3" level="project" />
     <orderEntry type="library" name="Maven: com.github.spy.sea:sofa-tracer-datasource:1.0.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot:2.0.3.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: com.github.spy.sea:sofa-tracer-simple-plugin:1.0.0-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: com.github.spy.sea:sofa-tracer-dubbo-legacy-plugin:1.0.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.google.zxing:core:3.3.0" level="project" />
   </component>
 </module>
