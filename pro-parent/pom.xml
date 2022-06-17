@@ -59,7 +59,7 @@
         <commons-beanutils-version>1.9.3</commons-beanutils-version>
         <commons-httpclient-version>3.1</commons-httpclient-version>
         <!--fastjson-->
-        <fastjson-version>1.2.31</fastjson-version>
+        <fastjson-version>1.2.83</fastjson-version>
         <jackson-annotations.version>2.9.7</jackson-annotations.version>
         <mybatis-version>3.4.2</mybatis-version>
 
